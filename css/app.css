@@ -32,8 +32,7 @@ button {
     color: white;
 }
 
-.baloons-container {
-    background-color: black;
+.baloons-container { 
     height: 100%;
     width: 100%;
     display: flex;
@@ -42,7 +41,7 @@ button {
 }
 
 .baloon {
-    background-color: grey;
+    background-color: white;
     margin: 10px 0;
     width: 100%;
     display: flex;
@@ -50,11 +49,15 @@ button {
     align-items: center;
     border-radius: 20px;
     padding: 5px 30px;
+    opacity: 0.6;
+    transition: opacity 1s;
 }
 
 .main {
     background-color: white;
-    min-height: 100px;
+    border-style: solid;
+    border-width: 5px;
+    opacity: 1;
 }
 
 p {
@@ -64,4 +67,8 @@ p {
 
 .main p {
     font-size: 1.2em;
+}
+
+.removed {
+    opacity: 0;
 }
